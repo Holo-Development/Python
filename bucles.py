@@ -53,3 +53,22 @@ while numero<0:
 if intentos<2:
     solucion=math.sqrt(numero)
     print(f"Raiz cuadrada: {solucion} de {numero}")
+
+
+for letra in "Python":
+    if letra=="h":
+        continue
+    print(f"Viendo la letra:{letra}")
+
+variable="Pildoras Informaticas"
+contador=0
+for letra in variable:
+    if letra == " ":
+        continue
+
+    contador+=1
+else:
+    print("No se cumple la el ciclo")
+
+    
+print(f"La cantidad de letras es: {contador}")
