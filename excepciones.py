@@ -54,3 +54,25 @@ while operacion is not ("salir","Salir","SALIR"):
         print("Introduce un numero por favor")
     finally:
         print("El programa termino")
+
+    
+    #Crear una excepcion propia
+
+    def evaluaEdad(edad):
+
+        if edad<0:
+            raise TypeError("Este es un mensaje personalizado de error")
+
+        if edad < 20:
+            return "Eres muy joven"
+        elif edad < 40:
+            return "Eres joven"
+        elif edad < 65:
+            return "Eres maduro"
+        elif edad < 100:
+            return "Cuidate..."
+
+try:
+    print(evaluaEdad(18))
+except ValueError as ErrorNumeroNegativo:
+    print(ErrorNumeroNegativo)
